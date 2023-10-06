@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confidential-Form</title>
+    <link rel="stylesheet" href="styles.css" media="screen"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="icon" href="assets/conduespol.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Wesley Briones">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <div class="contenedor">
+            <img class="logo" src="./assets/conduespol.jpg">
+            <div class="contenido">
+                <h1>Autorización de protección de datos</h1>
+            </div>
+        </div>
+        <h3 class="subtitulo">
+            La presente Política de Protección de Datos regula la recolección, 
+            almacenamiento, uso, circulación y eliminación de datos de clientes 
+            actuales y potenciales de  La Escuela de conductores profesionales 
+            ESPOL E.P. de acuerdo con las disposiciones contenidas en la Ley 
+            Orgánica de Protección de Datos Personales publicada en el Registro 
+            Oficial Suplemento 459 del 26 de mayo de 2021 (en adelante, “LOPDP”), 
+            por medio de los cuales se dictan disposiciones generales para la 
+            protección de datos personales.
+        </h3>
+    </header>
+
+    <!-- Form del diseño -->
+    <div class="formulario">
+        <h2>Formulario de Registro</h2>
+        <form action="#" id="miFormulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" required>
+
+            <label for="empresa">Empresa:</label>
+            <input type="text" id="empresa" name="empresa">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="direccion">Dirección Domiciliaria:</label>
+            <textarea id="direccion" name="direccion" required></textarea>
+
+            <label>
+                <input type="checkbox" id="acepto" name="acepto" oninvalid="this.setCustomValidity('Acepta los términos y condiciones')" onchange="this.setCustomValidity('')" required>
+                Acepto los <b>términos y condiciones</b> de uso y <b>políticas de privacidad.</b>
+            </label>
+
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
